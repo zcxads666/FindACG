@@ -45,9 +45,10 @@ const router = useRouter();
 
 watchEffect(() => {
   if (value.value) {
-    value.value = value.value; // 无需此赋值
+    // 无需此赋值
   }
 });
+
 
 const onSearch = async (searchValue) => {
   console.log('use value', searchValue);
@@ -67,20 +68,7 @@ const onSearch = async (searchValue) => {
   } catch (error) {
     console.error('Navigation failed:', error);
   }
-  // 发送 GET 请求
-  try {
-    const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
-    const dataArray = response.data;
-    dataArray.forEach(item => {
-      //console.log('User ID:', item.userId);
-      //console.log('ID:', item.id);
-      //console.log('Title:', item.title);
-      //console.log('Body:', item.body);
-      console.log('---');
-    });
-  } catch (error) {
-    console.error('Error fetching data:', error);
-  }
+
 };
 
 const handleMenuClick = (pane) => {

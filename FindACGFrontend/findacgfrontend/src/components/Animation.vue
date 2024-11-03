@@ -1,12 +1,13 @@
 <template>
-  <a-list item-layout="horizontal" :data-source="data">
+  <a-list item-layout="horizontal" :data-source="data" :pagination="pagination">
     <template #renderItem="{ item }">
       <a-list-item>
         <a-list-item-meta
-            description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+            :description="item.title"
         >
+
           <template #title>
-            <a href="https://www.antdv.com/">{{ item.title }}</a>
+            {{ item.id }}
 
           </template>
           <template #avatar>
@@ -15,24 +16,60 @@
         </a-list-item-meta>
       </a-list-item>
     </template>
+    <template>
+      <a-pagination v-model:current="current" :total="10" show-less-items />
+    </template>
   </a-list>
+
 </template>
 
 
 <script setup>
+import { onMounted, ref ,watchEffect} from 'vue';
+import { useRoute } from 'vue-router';
+import { useCounterStore } from "../store/searchData.js";
 
-const data = [
-  {
-    title: 'Ant Design Title 1',
+const store = useCounterStore();
+
+console.log(JSON.stringify(store.dataItem));
+
+
+const route = useRoute();
+let search = ref('');
+onMounted(() => {
+  search = route.query.search;
+  console.log("search", search);
+  store.getData()
+});
+watchEffect(() => {
+  if (route.query.search) {
+    search = route.query.search;
+    console.log("search:", search);
+  }
+});
+const data = ref(store.dataItem);
+// const data = [
+//   {
+//     title: 'Ant Design Title 1',
+//   },
+//   {
+//     title: 'Ant Design Title 2',
+//   },
+//   {
+//     title: 'Ant Design Title 3',
+//   },
+//   {
+//     title: 'Ant Design Title 4',
+//   },
+// ];
+
+const current = ref(1);
+
+const pagination = {
+  onChange: page => {
+    console.log(page);
   },
-  {
-    title: 'Ant Design Title 2',
-  },
-  {
-    title: 'Ant Design Title 3',
-  },
-  {
-    title: 'Ant Design Title 4',
-  },
-];
+  pageSize: 10,
+};
+
 </script>

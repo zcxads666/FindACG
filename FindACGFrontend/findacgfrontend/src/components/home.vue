@@ -33,6 +33,12 @@
 <script setup>
 import {ref, onMounted} from 'vue';
 import {useRouter} from "vue-router";
+import { useCounterStore } from "../store/searchData.js";
+
+const store = useCounterStore();
+console.log(store.count);
+store.increment();
+console.log(store.count);
 
 const selectedKeys = ref(['1']);
 
@@ -52,6 +58,8 @@ onMounted(() => {
   // 初始化选中的菜单项
   router.currentRoute.value.path === '/' ? selectedKeys.value = ['1'] : selectedKeys.value = ['2'];
 });
+
+
 
 </script>
 
