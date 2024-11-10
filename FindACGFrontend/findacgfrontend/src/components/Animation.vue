@@ -3,7 +3,7 @@
     <template #renderItem="{ item }">
       <a-list-item>
         <a-list-item-meta
-            :description="item.title"
+            :description="item.userProfile"
         >
 
           <template #title>
@@ -31,7 +31,7 @@ import { useCounterStore } from "../store/searchData.js";
 
 const store = useCounterStore();
 
-console.log(JSON.stringify(store.dataItem));
+console.log("dataItem:"+JSON.stringify(store.dataItem));
 
 
 const route = useRoute();
@@ -39,7 +39,7 @@ let search = ref('');
 onMounted(() => {
   search = route.query.search;
   console.log("search", search);
-  store.getData()
+  store.getUserList()
 });
 watchEffect(() => {
   if (route.query.search) {

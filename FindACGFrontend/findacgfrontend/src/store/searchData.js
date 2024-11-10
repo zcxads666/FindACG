@@ -28,11 +28,31 @@ export const useCounterStore = defineStore('counter', () => {
         }
     };
 
+    const getUserList = async () => {
+        // 定义请求参数
+        const params = {
+            userName: ""
+        };
+
+        try {
+            // 发送 POST 请求
+            const response = await axios.post('http://127.0.0.1:8101/api/user/list/page', params);
+            const dataArray = response.data.data.records;
+            dataItem.value = response.data.data.records;
+            dataArray.forEach(item => {
+                console.log('---');
+            });
+        } catch (error) {
+            console.error('Error fetching user list:', error);
+        }
+    };
+
 
     return {
         count,
         dataItem,
         increment,
-        getData
+        getData,
+        getUserList,
     };
 });
