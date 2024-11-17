@@ -55,7 +55,7 @@ public class FindAnyServiceImpl extends ServiceImpl<PostMapper, Post> implements
         for (Map<String, Object> map : saveSearch) {
             List<String> titles = (List<String>) map.get("titles");
             List<String> hrefs = (List<String>) map.get("hrefs");
-
+            List<String> dynamicTag = (List<String>) map.get("tags");
             // 遍历titles和hrefs并创建新的Map
             for (int i = 0; i < titles.size(); i++) {
                 Post post = new Post();
@@ -64,7 +64,8 @@ public class FindAnyServiceImpl extends ServiceImpl<PostMapper, Post> implements
                 post.setContent(hrefs.get(i));
                 post.setTitle(titles.get(i));
                 post.setUserId(1L);
-                post.setTags("[\"OutSide\",\"novel\"]");
+
+                post.setTags("[\"OutSide\",\"" + dynamicTag.get(i) + "\"]");
                 //boolean isSave = this.save(post);
                int isSave = postMapper.insert(post);
 //                if (isSave) {
