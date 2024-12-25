@@ -15,86 +15,109 @@
     </div>
 
     <a-tabs v-model:activeKey="activeKey" @tab-click="handleMenuClick">
-      <a-tab-pane key="1" tab="Animation"><router-view /></a-tab-pane>
-      <a-tab-pane key="2" tab="Game" force-render><router-view /></a-tab-pane>
-      <a-tab-pane key="3" tab="Comics"><router-view /></a-tab-pane>
-      <a-tab-pane key="4" tab="Novel"><router-view /></a-tab-pane>
+      <a-tab-pane key="All" tab="All"><router-view /></a-tab-pane>
+      <a-tab-pane key="novel" tab="Novel" force-render><router-view /></a-tab-pane>
+      <a-tab-pane key="anime" tab="Wiki"><router-view /></a-tab-pane>
+      <a-tab-pane key="user" tab="User"><router-view /></a-tab-pane>
     </a-tabs>
   </div>
 </template>
 
 <script setup>
-import { onMounted, ref, watchEffect } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
-import axios from 'axios';
+import { useCounterStore } from "../store/searchData.js";
+
+const store = useCounterStore();
+const router = useRouter();
+const route = useRoute();
 
 const value = ref('');
 const activeKey = ref('');
 
-// 初始化输入框值
+// 初始页面加载时根据路由参数获取数据
 onMounted(() => {
-  const route = useRoute();
   if (route.query.search) {
     value.value = route.query.search;
+    // const params = {
+    //   searchType: "",
+    //   searchText: value.value
+    // };
+    // store.getSearchList(params);
   }
 });
 
-// 监听路由变化
-const router = useRouter();
-
-
-watchEffect(() => {
-  if (value.value) {
-    // 无需此赋值
-  }
-});
-
-
+// 搜索事件处理
 const onSearch = async (searchValue) => {
-  console.log('use value', searchValue);
-  console.log('or use this.value', value.value);
+  console.log('Search triggered with value:', searchValue);
+
+  // 清空当前数据
+  store.clearData();
 
   // 更新路由
-  // router.push({
-  //   query: { search: value.value }
-  // });
   try {
-    // 使用 await 确保导航完成后再进行下一步操作
     await router.push({
-      //name: 'YourRouteName', // 替换为实际路由名称
-      query: { search: value.value }// 根据需要传递参数
+      query: { search: searchValue }
     });
+
+    await fetchData();
+
+
     console.log('Navigation completed.');
   } catch (error) {
     console.error('Navigation failed:', error);
   }
-
 };
 
+// Tab 菜单切换事件处理
 const handleMenuClick = (pane) => {
   console.log(pane);
 
   const key = pane;
   let path;
 
-  if (key === '1') {
-    path = '/animation';
-  } else if (key === '2') {
-    path = '/game';
-  } else if (key === '3') {
-    path = '/comics';
-  } else if (key === '4') {
-    path = '/novel';
+  if (key === 'All') {
+    path = '/all';
+  } else if (key === 'novel') {
+    path = '/all';
+  } else if (key === 'anime') {
+    path = '/all';
+  } else if (key === 'user') {
+    path = '/user';
   }
 
   console.log(value.value);
-
-  // 添加查询参数
+  store.clearData();
+  // 添加查询参数并更新路由
   router.push({
-    path: `/search${path}`,
-    query: {search: value.value}
+    path: `/home/search${path}`,
+    query: { search: value.value }
   });
 };
+
+
+// 根据 activeKey 获取数据
+const fetchData = async () => {
+
+
+  if (activeKey.value === 'user') {
+    const param = {
+      userName: value.value
+    };
+    console.log('Fetching user list with params:', param);
+     await store.getUserList(param);
+  }
+  else {
+    const params = {
+      searchType: activeKey.value !== 'All' ? activeKey.value : "",
+      searchText: value.value
+    };
+    console.log('Fetching search list with params:', params);
+    await store.getSearchList(params);
+  }
+};
+
+
 </script>
 
 <style scoped>

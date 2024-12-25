@@ -24,11 +24,12 @@ public class AllSearch implements SearchStrategy {
         List<Map<String, Object>> searchGame = animeSearch.doSearchGame(text);
         List<Map<String, Object>> combinedList = new ArrayList<>();
 
+    // 将 searchGame 的所有元素添加到 combinedList 中
+    combinedList.addAll(searchGame);
     // 将 searchNovel 的所有元素添加到 combinedList 中
     combinedList.addAll(searchNovel);
 
-    // 将 searchGame 的所有元素添加到 combinedList 中
-    combinedList.addAll(searchGame);
+
 
         return combinedList;
     }

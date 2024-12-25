@@ -62,7 +62,7 @@ public class FindAnyServiceImpl extends ServiceImpl<PostMapper, Post> implements
 
             List<PostEsDTO> postGet =  postService.findByTitle(searchText);
 
-        if(postGet.size()==0) {
+        if(postGet.size()==0 && searchText!="") {
             List<Map<String, Object>> saveSearch = optSearch.doSearch(searchText);
              List<PostSummary> postSummaries = saveSearch.stream()
                 .flatMap(map -> {

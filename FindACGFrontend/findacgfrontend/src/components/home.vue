@@ -45,19 +45,16 @@ const selectedKeys = ref(['1']);
 const handleMenuClick = (event) => {
   const key = event.key;
   if (key === '1') {
-    router.push('/search');
+    router.push('/home/search');
   } else if (key === '2') {
-    router.push('/discuss');
+    router.push('/home/discuss');
   } else if (key === '3') {
-    router.push('/user');
+    router.push('/home/user');
   }
 };
 
 const router = useRouter();
-onMounted(() => {
-  // 初始化选中的菜单项
-  router.currentRoute.value.path === '/' ? selectedKeys.value = ['1'] : selectedKeys.value = ['2'];
-});
+
 
 
 

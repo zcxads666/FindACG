@@ -70,7 +70,7 @@ public class spiderAdapter implements spiderBase {
             Spider.create(new NovelAdaptee())
                     .addUrl(url)
                     .addPipeline(resultPipeline)
-                    .thread(3)
+                    .thread(6)
                     .run();
 
             // 打印获取到的结果

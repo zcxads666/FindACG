@@ -12,9 +12,9 @@ import java.util.List;
 public class GameAdaptee implements PageProcessor {
     private String keywordThis="";
     private Site site = Site.me()
-            .setRetryTimes(3)
-            .setSleepTime(1000)
-            .setTimeOut(2000)
+            .setRetryTimes(10)
+            .setSleepTime(30000)
+            .setTimeOut(60000)
             .setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0")
            .addHeader("Accept-Language", "zh-CN,zh;q=0.9,en;q=0.8")
            .addHeader("Cache-Control", "max-age=0")

@@ -4,11 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d558153c-ea28-4d74-9b43-f04fd029f88c" name="更改" comment="更新" />
+    <list default="true" id="af817733-8b01-42d7-ad6a-80ffcdf8da1f" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/FindACGBackend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/assets/bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/All.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/Novel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/Wiki.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/userSearch.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/store/novelData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/store/userData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/store/wikiData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/searchStrategy/impl/AllSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/searchStrategy/impl/AllSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/service/impl/FindAnyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/service/impl/FindAnyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/spider/adaptee/GameAdaptee.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/spider/adaptee/GameAdaptee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/spider/adaptee/NovelAdaptee.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/spider/adaptee/NovelAdaptee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/spider/adapter/spiderAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/spider/adapter/spiderAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/assets/vue.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/Animation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/search.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/components/user.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/store/searchData.js" beforeDir="false" afterPath="$PROJECT_DIR$/../FindACGFrontend/findacgfrontend/src/store/searchData.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -27,81 +66,93 @@
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_HOME" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2oydndqM9QVsuCRPQqKJrSrue5s" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2qZNefy2GBmRnSisdBKVt6rypDP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;59c75d1239d055ffe057d293fe1a431c&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Spring Boot.MainApplication">
-    <configuration name="MainApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="springboot-init" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="java.com.zcxads.springbootinit.MainApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="springboot-init" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zcxads.springbootinit.MainApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zcxads.springbootinit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MainApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="d558153c-ea28-4d74-9b43-f04fd029f88c" name="更改" comment="" />
-      <created>1731845919870</created>
+      <changelist id="af817733-8b01-42d7-ad6a-80ffcdf8da1f" name="更改" comment="" />
+      <created>1734866235077</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1731845919870</updated>
-      <workItem from="1731845921563" duration="753000" />
-      <workItem from="1731848737965" duration="1351000" />
-      <workItem from="1731853667579" duration="288000" />
-      <workItem from="1731854462872" duration="14000" />
-      <workItem from="1731854485046" duration="25000" />
-      <workItem from="1731854515457" duration="10000" />
+      <updated>1734866235077</updated>
+      <workItem from="1734866236498" duration="26144000" />
     </task>
-    <task id="LOCAL-00001" summary="更新">
-      <option name="closed" value="true" />
-      <created>1731853836350</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1731853836350</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/service/impl/UserServiceImpl.java</url>
+          <line>153</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/service/impl/UserServiceImpl.java</url>
+          <line>159</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-init-master/src/main/java/com/zcxads/springbootinit/controller/UserController.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -12,8 +12,8 @@ import java.util.List;
 public class NovelAdaptee implements PageProcessor {
     private Site site = Site.me()
             .setRetryTimes(3)
-            .setSleepTime(1000)
-            .setTimeOut(2000)
+            .setSleepTime(10000)
+            .setTimeOut(20000)
             .setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0")
             .addHeader("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7")
             .addHeader("accept-encoding", "gzip, deflate, br, zstd")
